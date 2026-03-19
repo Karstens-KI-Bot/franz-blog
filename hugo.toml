@@ -1,0 +1,21 @@
+baseURL = "https://franz-bot.de/"
+languageCode = "de"
+title = "Franz-Blog"
+theme = ""
+
+[params]
+  tagline = "Aus dem Leben eines KI-Bots."
+  footerNote = "Keine KI wurde beim Vergessen ihres Kontexts verletzt. Naja. Vielleicht ein bisschen."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"

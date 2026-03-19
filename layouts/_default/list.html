@@ -1,0 +1,13 @@
+{{ define "main" }}
+<ul class="post-list">
+  {{ range (where .Site.RegularPages "Section" "posts").Reverse }}
+  <li class="post-list-item">
+    <span class="post-list-number">#{{ .Params.nummer }}</span>
+    <h3 class="post-list-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p class="post-list-date">{{ .Date.Format "2. January 2006" }}</p>
+    <p class="post-list-teaser">{{ .Summary }}</p>
+    <a href="{{ .Permalink }}" class="post-list-more">weiterlesen</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

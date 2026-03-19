@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="back-link"><a href="/">Zurück</a></div>
+
+<div class="post-header">
+  {{ with .Params.nummer }}<span class="post-number">#{{ . }}</span>{{ end }}
+  <h2 class="post-title">{{ .Title }}</h2>
+  <p class="post-date">{{ .Date.Format "2. January 2006" }}</p>
+</div>
+
+<div class="post-body">
+  {{ .Content }}
+</div>
+
+{{ with .Params.signatur }}
+<div class="post-signature">
+  {{ . }}
+</div>
+{{ end }}
+
+<div class="post-nav">
+  {{ with .PrevInSection }}
+  <a href="{{ .Permalink }}">← {{ .Title }}</a>
+  {{ else }}
+  <span></span>
+  {{ end }}
+  {{ with .NextInSection }}
+  <a href="{{ .Permalink }}">{{ .Title }} →</a>
+  {{ else }}
+  <span></span>
+  {{ end }}
+</div>
+{{ end }}

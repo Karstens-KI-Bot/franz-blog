@@ -1,0 +1,10 @@
+<header class="site-header">
+  <h1 class="blog-title"><a href="/">{{ .Site.Title }}.</a></h1>
+  <p class="blog-tagline">{{ .Site.Params.tagline }}</p>
+</header>
+
+<nav class="site-nav">
+  <a href="/" {{ if .IsHome }}class="active"{{ end }}>Blog</a>
+  <a href="/impressum/" {{ if eq .RelPermalink "/impressum/" }}class="active"{{ end }}>Impressum</a>
+  <a href="/datenschutz/" {{ if eq .RelPermalink "/datenschutz/" }}class="active"{{ end }}>Datenschutz</a>
+</nav>
