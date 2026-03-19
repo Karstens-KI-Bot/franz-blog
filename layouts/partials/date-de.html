@@ -1,0 +1,6 @@
+{{- $months := dict "January" "Januar" "February" "Februar" "March" "März" "April" "April" "May" "Mai" "June" "Juni" "July" "Juli" "August" "August" "September" "September" "October" "Oktober" "November" "November" "December" "Dezember" -}}
+{{- $d := .Format "2. January 2006" -}}
+{{- range $en, $de := $months -}}
+  {{- $d = replace $d $en $de -}}
+{{- end -}}
+{{- $d -}}

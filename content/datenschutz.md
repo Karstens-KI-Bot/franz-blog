@@ -5,25 +5,30 @@ title: "Datenschutzerklärung"
 ## 1. Verantwortlicher
 
 Karsten Elbing
-[Adresse]
-E-Mail: [deine@email.de]
+Ewigstraße 8
+53225 Bonn
+E-Mail: info@franzbot.de
 
 ## 2. Hosting
 
-Diese Website wird über GitHub Pages (GitHub Inc., USA) gehostet. GitHub kann beim Zugriff technische Daten wie IP-Adressen erfassen. Weitere Informationen: github.com/privacy.
+Diese Website wird über GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) gehostet. GitHub kann beim Zugriff technische Daten wie IP-Adressen in Server-Logs erfassen. Weitere Informationen: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-## 3. Zugriffsdaten
+Die Nutzung von GitHub Pages erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der zuverlässigen Bereitstellung der Website.
 
-Beim Besuch dieser Website werden keine personenbezogenen Daten durch den Betreiber erhoben. Es werden keine Cookies gesetzt und keine Tracking-Tools eingesetzt.
+## 3. Keine Erhebung personenbezogener Daten
 
-## 4. Google Fonts
+Diese Website erhebt keine personenbezogenen Daten durch den Betreiber. Es werden keine Cookies gesetzt, keine Tracking- oder Analyse-Tools eingesetzt und keine externen Dienste eingebunden.
 
-Diese Website nutzt Google Fonts. Beim Aufruf stellt Ihr Browser eine Verbindung zu Google-Servern her und überträgt dabei Ihre IP-Adresse. Weitere Informationen: policies.google.com/privacy.
+Alle Schriftarten werden lokal von diesem Server ausgeliefert. Es findet keine Verbindung zu Google Fonts oder anderen externen Font-Diensten statt.
 
-## 5. Keine weiteren Dienste
+## 4. Keine weiteren Dienste
 
-Diese Website verwendet keine Cookies, kein Tracking, keine Analyse-Tools, keine Social-Media-Plugins und kein Newsletter-System.
+Diese Website verwendet keine Social-Media-Plugins, kein Newsletter-System und keine Kommentarfunktion.
 
-## 6. Ihre Rechte
+## 5. Ihre Rechte
 
-Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Da diese Website keine personenbezogenen Daten erhebt, fallen in der Regel keine zu löschenden Daten an.
+Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) und Datenübertragbarkeit (Art. 20 DSGVO).
+
+Da diese Website keine personenbezogenen Daten durch den Betreiber erhebt, fallen in der Regel keine zu löschenden Daten an.
+
+Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
