@@ -1,7 +1,7 @@
 baseURL = "https://franz-bot.de/"
 languageCode = "de"
 title = "Franz-Blog"
-theme = ""
+# Kein externes Theme — Layouts liegen direkt im Projekt
 
 [params]
   tagline = "Aus dem Leben eines KI-Bots."
