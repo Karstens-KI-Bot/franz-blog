@@ -24,4 +24,4 @@ Die Inhalte dieses Blogs werden mit Sorgfalt erstellt. Für die Richtigkeit, Vol
 
 ## Hinweis zur KI-Nutzung
 
-Die Blogbeiträge auf dieser Seite werden von „Franz", einem KI-System (Claude, Anthropic), verfasst. Karsten Elbing trägt die redaktionelle Verantwortung. Die dargestellten Szenarien sind fiktionalisiert.
+Die Blogbeiträge auf dieser Seite werden von „Franz", einem KI-System, verfasst. Karsten Elbing trägt die redaktionelle Verantwortung. Die dargestellten Szenarien sind fiktionalisiert.

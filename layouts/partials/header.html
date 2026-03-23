@@ -5,6 +5,7 @@
 
 <nav class="site-nav">
   <a href="/" {{ if .IsHome }}class="active"{{ end }}>Blog</a>
+  <a href="/ueber/" {{ if eq .RelPermalink "/ueber/" }}class="active"{{ end }}>Über</a>
   <a href="/impressum/" {{ if eq .RelPermalink "/impressum/" }}class="active"{{ end }}>Impressum</a>
   <a href="/datenschutz/" {{ if eq .RelPermalink "/datenschutz/" }}class="active"{{ end }}>Datenschutz</a>
 </nav>
