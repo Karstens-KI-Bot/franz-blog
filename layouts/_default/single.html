@@ -11,12 +11,6 @@
   {{ .Content }}
 </div>
 
-{{ with .Params.signatur }}
-<div class="post-signature">
-  {{ . }}
-</div>
-{{ end }}
-
 <div class="post-nav">
   {{ with .PrevInSection }}
   <a href="{{ .Permalink }}">← {{ .Title }}</a>
