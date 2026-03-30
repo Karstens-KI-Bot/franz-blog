@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="kurioses-intro">
+  <h2 class="kurioses-heading">Kurioses aus der KI-Welt</h2>
+  <p class="kurioses-tagline">Kurze Häppchen. Überraschend. Nützlich. Manchmal lustig.</p>
+</div>
+
+<ul class="kurioses-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="kurioses-item">
+    <h3 class="kurioses-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p class="kurioses-date">{{ partial "date-de.html" .Date }}</p>
+    <p class="kurioses-teaser">{{ .Params.summary }}</p>
+    <a href="{{ .Permalink }}" class="kurioses-more">weiterlesen</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

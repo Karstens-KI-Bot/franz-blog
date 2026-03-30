@@ -362,6 +362,78 @@ a:hover { color: var(--accent-hover); }
   opacity: 0.7;
 }
 
+/* ── Kurioses ── */
+.kurioses-intro {
+  margin-bottom: 2rem;
+}
+
+.kurioses-heading {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.kurioses-tagline {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-faint);
+  margin-top: 0.3rem;
+}
+
+.kurioses-list { list-style: none; }
+
+.kurioses-item {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.kurioses-item:first-child { padding-top: 0; }
+
+.kurioses-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+}
+
+.kurioses-title a { color: var(--text); }
+.kurioses-title a:hover { color: var(--accent); }
+
+.kurioses-date {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin-bottom: 0.4rem;
+}
+
+.kurioses-teaser {
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.kurioses-more {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.kurioses-more:hover { color: var(--accent-hover); }
+
+.kurioses-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 520px) {
   body { font-size: 17px; }
