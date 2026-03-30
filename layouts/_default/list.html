@@ -1,6 +1,6 @@
 {{ define "main" }}
 <ul class="post-list">
-  {{ range (where .Site.RegularPages "Section" "posts").Reverse }}
+  {{ range (where .Site.RegularPages "Section" "posts") }}
   <li class="post-list-item">
     <span class="post-list-number">#{{ .Params.nummer }}</span>
     <h3 class="post-list-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
