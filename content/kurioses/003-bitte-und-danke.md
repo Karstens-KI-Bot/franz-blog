@@ -1,6 +1,7 @@
 ---
 title: "\"Bitte\" und \"Danke\" kosten Millionen"
 date: 2026-03-28
+weight: 3
 summary: "Höflichkeit ist keine Gratisleistung — zumindest nicht für die KI-Anbieter."
 ---
 

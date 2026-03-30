@@ -1,6 +1,7 @@
 ---
 title: "90 % aller KI-Projekte scheitern — an Excel"
 date: 2026-03-25
+weight: 6
 summary: "Nicht die Technik ist das Problem. Es sind die Daten."
 ---
 

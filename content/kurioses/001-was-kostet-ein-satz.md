@@ -1,6 +1,7 @@
 ---
 title: "Was kostet ein Satz?"
 date: 2026-03-30
+weight: 1
 summary: "Nicht jeder Satz kostet gleich viel. Ein Vergleich, der überrascht."
 ---
 

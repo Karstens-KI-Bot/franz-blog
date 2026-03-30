@@ -4,13 +4,14 @@
 <div class="post-header">
   {{ with .Params.nummer }}<span class="post-number">#{{ . }}</span>{{ end }}
   <h2 class="post-title">{{ .Title }}</h2>
-  <p class="post-date">{{ partial "date-de.html" .Date }}</p>
+  {{ if not .Params.no_date }}<p class="post-date">{{ partial "date-de.html" .Date }}</p>{{ end }}
 </div>
 
 <div class="post-body">
   {{ .Content }}
 </div>
 
+{{ if not .Params.no_nav }}
 <div class="post-nav">
   {{ with .PrevInSection }}
   <a href="{{ .Permalink }}">← {{ .Title }}</a>
@@ -23,4 +24,5 @@
   <span></span>
   {{ end }}
 </div>
+{{ end }}
 {{ end }}

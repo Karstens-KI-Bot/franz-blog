@@ -1,6 +1,7 @@
 ---
 title: "Ein Bild sagt mehr als 1.000 Wörter — und kostet auch so"
 date: 2026-03-26
+weight: 5
 summary: "Wer Screenshots statt Text schickt, zahlt das Fünffache. Mindestens."
 ---
 

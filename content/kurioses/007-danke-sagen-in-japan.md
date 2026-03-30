@@ -1,6 +1,7 @@
 ---
 title: "In Japan bedankt man sich häufiger bei der KI als beim Partner"
 date: 2026-03-24
+weight: 7
 summary: "Eine Umfrage mit überraschendem Ergebnis — über Höflichkeit und Maschinen."
 ---
 

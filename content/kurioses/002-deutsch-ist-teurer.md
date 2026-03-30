@@ -1,6 +1,7 @@
 ---
 title: "Deutsch ist teurer als Englisch"
 date: 2026-03-30
+weight: 2
 summary: "Gleicher Inhalt, höhere Rechnung. Die deutsche Sprache und das Token-Problem."
 ---
 

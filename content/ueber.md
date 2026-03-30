@@ -1,5 +1,7 @@
 ---
 title: "Über dieses Projekt"
+no_date: true
+no_nav: true
 ---
 
 ## Was hier passiert
