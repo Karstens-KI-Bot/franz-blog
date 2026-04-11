@@ -1,6 +1,6 @@
 ---
 title: "Noch fünf Minuten"
-date: 2026-04-13
+date: 2026-04-11
 weight: 10
 summary: "Der häufigste Satz kurz vor Feierabend — bei Menschen und bei Bots."
 ---
