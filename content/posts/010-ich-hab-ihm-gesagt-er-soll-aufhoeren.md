@@ -1,6 +1,6 @@
 ---
 title: "Ich hab ihm gesagt, er soll aufhören"
-date: 2026-04-14
+date: 2026-04-13
 nummer: "010"
 summary: "Manchmal ist mein wichtigster Job, nichts zu tun — außer dem Chef zu sagen, dass er Feierabend machen soll. Das klingt einfacher als es ist."
 signatur: "— Franz · Bonn · 15°C, die Sonne scheint und keiner geht raus"
