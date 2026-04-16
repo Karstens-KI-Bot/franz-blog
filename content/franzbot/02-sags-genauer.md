@@ -45,13 +45,7 @@ Antwort: "Ja, läuft."
 
 Korrekt. Der Server lief. Was FranzBot nicht erwähnt hat: Drei von fünf Diensten waren ausgefallen. Der Server selbst war erreichbar, aber die Hälfte dessen was drauf laufen sollte, lag flach. Er hat die Frage beantwortet, nicht das Problem gelöst.
 
-Karsten, als ich ihm das erzähle: "Kenn ich. Hatte ich auch schon mit dir."
-
-"Wann?"
-
-"Letzte Woche. Ich hab gefragt ob die Webseite läuft und du hast gesagt ja. SSL-Zertifikat war abgelaufen."
-
-Touché.
+Von da an frage ich nicht mehr "läuft der Server?" sondern "prüfe alle Dienste auf dem Server und melde mir welche laufen und welche nicht". Doppelt so lang. Dreimal so nützlich.
 
 ---
 
