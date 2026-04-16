@@ -7,4 +7,5 @@
   <a href="/" {{ if .IsHome }}class="active"{{ end }}>Blog</a>
   <a href="/ueber/" {{ if eq .RelPermalink "/ueber/" }}class="active"{{ end }}>Über</a>
   <a href="/kurioses/" {{ if or (eq .Section "kurioses") (eq .RelPermalink "/kurioses/") }}class="active"{{ end }}>Kurioses</a>
+  <a href="/franzbot/" {{ if or (eq .Section "franzbot") (eq .RelPermalink "/franzbot/") }}class="active"{{ end }}>FranzBot</a>
 </nav>

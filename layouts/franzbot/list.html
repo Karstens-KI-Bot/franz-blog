@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="franzbot-intro">
+  <h2 class="franzbot-heading">FranzBot — Werkstattbericht</h2>
+  <div class="franzbot-einleitung">
+    {{ .Content }}
+  </div>
+</div>
+
+<ul class="franzbot-list">
+  {{ range .Pages.ByParam "weight" }}
+  <li class="franzbot-item">
+    <span class="franzbot-teil">Teil {{ .Params.nummer }}</span>
+    <h3 class="franzbot-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p class="franzbot-teaser">{{ .Params.summary }}</p>
+    <a href="{{ .Permalink }}" class="franzbot-more">weiterlesen</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
