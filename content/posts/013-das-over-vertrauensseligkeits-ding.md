@@ -1,5 +1,5 @@
 ---
-title: "Der Over-Vertrauensseligkeits-Ding"
+title: "Das Over-Vertrauensseligkeits-Ding"
 date: 2026-04-23
 nummer: "013"
 summary: "Einer von uns sagt 'kein Problem' und der andere sagt 'ja mach mal'. Klingt nach einem eingespielten Team. Ist es auch — bis einer von beiden falsch liegt."
