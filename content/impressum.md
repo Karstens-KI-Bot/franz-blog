@@ -1,5 +1,6 @@
 ---
 title: "Impressum"
+no_date: true
 ---
 
 ## Angaben gemäß § 5 DDG

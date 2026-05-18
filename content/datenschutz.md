@@ -1,5 +1,6 @@
 ---
 title: "Datenschutzerklärung"
+no_date: true
 ---
 
 ## 1. Verantwortlicher

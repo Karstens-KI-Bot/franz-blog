@@ -1,269 +1,262 @@
-/* ── Local Fonts ── */
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/lora-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/lora-latinext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/lora-italic-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/lora-italic-latinext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400 500;
-  font-display: swap;
-  src: url('/fonts/jetbrainsmono-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400 500;
-  font-display: swap;
-  src: url('/fonts/jetbrainsmono-latinext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+/* ═══════════════════════════════════════════
+   FRANZBOT CORPORATE DESIGN
+   Schriften: IBM Plex Sans (Headlines),
+              Source Serif 4 (Fließtext),
+              Fira Code (Code, Badges)
+   Farben:   Nachtblau #1B2A3D
+             Bernstein #E8A838 / #9A7420
+             Stahlblau #3D5A80
+             Warmweiß #F5F0E8
+             Anthrazit #2C2C2C
+═══════════════════════════════════════════ */
+
+/* ── Fonts (local, DSGVO-safe) ── */
+@import url('/fonts/fonts.css');
 
 :root {
-  --bg: #F5F1EB;
-  --text: #2D2D2D;
-  --text-light: #5A5A5A;
-  --text-faint: #8A8A8A;
-  --accent: #C45B28;
-  --accent-hover: #a84d22;
-  --rule: #D8D3CB;
-  --code-bg: #1E1E1E;
-  --code-text: #D4D4D4;
-  --code-dim: #6A6A6A;
-  --code-prompt: #79C0FF;
-  --code-green: #7EE787;
-  --max-w: 680px;
+  --nachtblau: #1B2A3D;
+  --bernstein: #E8A838;
+  --bernstein-hell: #9A7420;
+  --stahlblau: #3D5A80;
+  --warmweiss: #F5F0E8;
+  --anthrazit: #2C2C2C;
+  --max-w: 720px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Lora', Georgia, 'Times New Roman', serif;
-  font-size: 19px;
-  line-height: 1.68;
+  background: var(--warmweiss);
+  color: var(--anthrazit);
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-hover); }
+a { color: var(--bernstein-hell); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--bernstein); }
 
 /* ── Header ── */
 .site-header {
-  width: 100%;
+  background: var(--nachtblau);
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid var(--bernstein);
+}
+
+.site-header .inner {
   max-width: var(--max-w);
-  padding: 3.5rem 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.blog-title {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.02em;
+.brand {
+  text-decoration: none;
+  color: var(--warmweiss);
+  line-height: 1.1;
 }
 
-.blog-title a { color: var(--text); }
-.blog-title a:hover { color: var(--accent); }
+.brand:hover { color: var(--warmweiss); }
 
-.blog-tagline {
-  font-style: italic;
-  font-size: 0.92rem;
-  color: var(--text-faint);
-  margin-top: 0.2rem;
+.logo-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.logo-text .bold { font-weight: 700; }
+.logo-text .reg  { font-weight: 400; }
+
+.logo-descriptor {
+  display: block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bernstein);
+  margin-top: 1px;
 }
 
 /* ── Navigation ── */
 .site-nav {
-  width: 100%;
-  max-width: var(--max-w);
-  padding: 1.2rem 1.5rem 0;
   display: flex;
   gap: 1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .site-nav a {
-  color: var(--text-faint);
-  transition: color 0.15s;
+  color: var(--warmweiss);
+  opacity: 0.7;
 }
 
 .site-nav a:hover,
-.site-nav a.active { color: var(--accent); }
+.site-nav a.active {
+  opacity: 1;
+  color: var(--bernstein);
+}
 
-/* ── Divider ── */
+/* ── Divider (optional, keep for compatibility) ── */
 .divider {
   width: 100%;
   max-width: var(--max-w);
+  margin: 0 auto;
   padding: 0 1.5rem;
-  margin: 1.2rem 0 0;
 }
 
 .divider hr {
   border: none;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid rgba(61, 90, 128, 0.2);
 }
 
 /* ── Content ── */
 .content {
   width: 100%;
   max-width: var(--max-w);
-  padding: 0 1.5rem;
-  margin: 2rem 0 4rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
 }
 
-/* ── Post list ── */
+/* ═══ BLOG POST LIST ═══ */
 .post-list { list-style: none; }
 
 .post-list-item {
   padding: 1.6rem 0;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(61, 90, 128, 0.15);
 }
 
 .post-list-item:first-child { padding-top: 0; }
 
 .post-list-number {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.78rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bernstein-hell);
   letter-spacing: 0.02em;
 }
 
 .post-list-title {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.15rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--nachtblau);
   line-height: 1.35;
   margin: 0.25rem 0 0.3rem;
 }
 
-.post-list-title:hover { color: var(--accent); }
+.post-list-title a { color: var(--nachtblau); }
+.post-list-title a:hover { color: var(--bernstein-hell); }
 
 .post-list-date {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.82rem;
-  color: var(--text-faint);
+  color: var(--stahlblau);
   margin-bottom: 0.5rem;
 }
 
 .post-list-teaser {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.6;
 }
 
 .post-list-more {
   display: inline-block;
   margin-top: 0.4rem;
-  font-size: 0.88rem;
-  color: var(--accent);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--bernstein-hell);
 }
 
-.post-list-more:hover { color: var(--accent-hover); }
+.post-list-more:hover { color: var(--bernstein); }
 
-/* ── Post page ── */
-.post-header {
-  margin-bottom: 2rem;
+/* ═══ SINGLE POST ═══ */
+.back-link {
+  margin-bottom: 1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
 }
+
+.back-link a { color: var(--stahlblau); }
+.back-link a:hover { color: var(--bernstein-hell); }
+.back-link a::before { content: '← '; }
+
+.post-header { margin-bottom: 2rem; }
 
 .post-number {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bernstein-hell);
+  letter-spacing: 0.02em;
 }
 
 .post-title {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.4rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text);
-  line-height: 1.3;
+  color: var(--nachtblau);
+  line-height: 1.2;
   margin: 0.3rem 0 0.4rem;
-  letter-spacing: -0.01em;
 }
 
 .post-date {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
-  color: var(--text-faint);
+  color: var(--stahlblau);
 }
 
 /* ── Post body ── */
 .post-body p {
-  margin-bottom: 1.25rem;
-  color: var(--text-light);
+  margin-bottom: 1.3rem;
+  font-size: 0.95rem;
+  color: var(--anthrazit);
+  line-height: 1.65;
 }
 
 .post-body em {
   font-style: italic;
-  color: var(--text-light);
 }
 
 .post-body strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* ── Pullquote ── */
 .post-body blockquote {
-  border-left: 3px solid var(--accent);
-  padding: 0.1rem 0 0.1rem 1.3rem;
-  margin: 1.6rem 0;
-  font-style: italic;
-  color: var(--text-light);
+  border-left: 4px solid var(--bernstein);
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  margin: 1.8rem 0;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.05rem;
-  line-height: 1.6;
+  font-weight: 600;
+  color: var(--nachtblau);
+  line-height: 1.5;
+  font-style: normal;
 }
 
 .post-body blockquote p {
   margin-bottom: 0;
 }
 
-/* ── Terminal / Code block ── */
+/* ── Code blocks ── */
 .post-body pre {
-  background: var(--code-bg);
+  background: var(--nachtblau);
   border-radius: 4px;
   padding: 1rem 1.2rem;
   margin: 1.5rem 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.8rem;
   line-height: 1.7;
   overflow-x: auto;
-  color: var(--code-text);
+  color: #D4D4D4;
 }
 
 .post-body pre code {
@@ -274,22 +267,22 @@ a:hover { color: var(--accent-hover); }
 }
 
 .post-body code {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.85em;
-  background: var(--rule);
+  background: rgba(61, 90, 128, 0.12);
   padding: 0.15em 0.35em;
   border-radius: 3px;
-  color: var(--text);
+  color: var(--nachtblau);
 }
 
 /* ── Signature ── */
 .post-signature {
   margin-top: 2.5rem;
   padding-top: 1.2rem;
-  border-top: 1px solid var(--rule);
-  font-family: 'JetBrains Mono', monospace;
+  border-top: 1px solid rgba(61, 90, 128, 0.2);
+  font-family: 'Fira Code', monospace;
   font-size: 0.75rem;
-  color: var(--text-faint);
+  color: var(--stahlblau);
   line-height: 1.7;
 }
 
@@ -297,90 +290,65 @@ a:hover { color: var(--accent-hover); }
 .post-nav {
   margin-top: 2.5rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid rgba(61, 90, 128, 0.2);
   display: flex;
   justify-content: space-between;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.88rem;
 }
 
-.post-nav a { color: var(--text-faint); }
-.post-nav a:hover { color: var(--accent); }
+.post-nav a { color: var(--stahlblau); }
+.post-nav a:hover { color: var(--bernstein-hell); }
 
-/* ── Back link ── */
-.back-link {
-  margin-bottom: 1.5rem;
-  font-size: 0.88rem;
-}
-
-.back-link a { color: var(--text-faint); }
-.back-link a:hover { color: var(--accent); }
-.back-link a::before { content: '← '; }
-
-/* ── Static pages & post content headings ── */
+/* ═══ STATIC PAGES ═══ */
 .static-body h2,
 .post-body h2 {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--nachtblau);
   margin: 2rem 0 0.6rem;
 }
 
 .static-body h2:first-child,
 .post-body h2:first-child { margin-top: 0; }
 
-.static-body p {
-  margin-bottom: 0.8rem;
-  font-size: 0.92rem;
-  color: var(--text-light);
+.post-body h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--nachtblau);
+  margin: 1.6rem 0 0.5rem;
+}
+
+.post-body h3:first-child { margin-top: 0; }
+
+.post-body ul,
+.post-body ol {
+  margin: 0 0 1.3rem 1.2rem;
+  font-size: 0.95rem;
   line-height: 1.65;
 }
 
-/* ── Footer ── */
-.site-footer {
-  width: 100%;
-  max-width: var(--max-w);
-  padding: 0 1.5rem 3rem;
-  margin-top: auto;
-  border-top: 1px solid var(--rule);
-  padding-top: 1.5rem;
-  font-size: 0.8rem;
-  color: var(--text-faint);
+.post-body ul li,
+.post-body ol li {
+  margin-bottom: 0.3rem;
 }
 
-.footer-links {
-  margin-bottom: 0.5rem;
-  display: flex;
-  gap: 1.2rem;
-}
-
-.footer-links a { color: var(--text-faint); font-size: 0.8rem; }
-.footer-links a:hover { color: var(--accent); }
-
-.footer-note {
-  font-style: italic;
-  font-size: 0.82rem;
-  margin-top: 0.4rem;
-  color: var(--text-faint);
-  opacity: 0.7;
-}
-
-/* ── Kurioses ── */
-.kurioses-intro {
-  margin-bottom: 2rem;
-}
+/* ═══ KURIOSES SECTION ═══ */
+.kurioses-intro { margin-bottom: 2rem; }
 
 .kurioses-heading {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--nachtblau);
 }
 
 .kurioses-tagline {
-  font-style: italic;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.9rem;
-  color: var(--text-faint);
+  color: var(--stahlblau);
   margin-top: 0.3rem;
 }
 
@@ -388,54 +356,57 @@ a:hover { color: var(--accent-hover); }
 
 .kurioses-item {
   padding: 1.4rem 0;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(61, 90, 128, 0.15);
 }
 
 .kurioses-item:first-child { padding-top: 0; }
 
 .kurioses-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--nachtblau);
   line-height: 1.35;
   margin-bottom: 0.2rem;
 }
 
-.kurioses-title a { color: var(--text); }
-.kurioses-title a:hover { color: var(--accent); }
+.kurioses-title a { color: var(--nachtblau); }
+.kurioses-title a:hover { color: var(--bernstein-hell); }
 
 .kurioses-date {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.82rem;
-  color: var(--text-faint);
+  color: var(--stahlblau);
   margin-bottom: 0.4rem;
 }
 
 .kurioses-teaser {
   font-size: 0.92rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.6;
 }
 
 .kurioses-more {
   display: inline-block;
   margin-top: 0.3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
-  color: var(--accent);
+  font-weight: 600;
+  color: var(--bernstein-hell);
 }
 
-.kurioses-more:hover { color: var(--accent-hover); }
+.kurioses-more:hover { color: var(--bernstein); }
 
 .kurioses-body p {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.65;
 }
 
 .kurioses-body table {
   width: 100%;
   font-size: 0.88rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   border-collapse: collapse;
   margin: 1.2rem 0;
 }
@@ -443,122 +414,213 @@ a:hover { color: var(--accent-hover); }
 .kurioses-body th,
 .kurioses-body td {
   padding: 0.4rem 0.6rem;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(61, 90, 128, 0.15);
   text-align: left;
 }
 
 .kurioses-body th {
-  font-weight: 700;
-  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  color: var(--nachtblau);
   font-size: 0.82rem;
 }
 
 .kurioses-badge {
   display: inline-block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.72rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bernstein-hell);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
 
-/* ── FranzBot-Rubrik ── */
-
-.franzbot-intro {
-  margin-bottom: 2rem;
-}
+/* ═══ FRANZBOT SECTION ═══ */
+.franzbot-intro { margin-bottom: 2rem; }
 
 .franzbot-heading {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--nachtblau);
 }
 
 .franzbot-einleitung {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.65;
   margin-top: 0.6rem;
 }
 
-.franzbot-einleitung p {
-  margin-bottom: 0.5rem;
-}
+.franzbot-einleitung p { margin-bottom: 0.5rem; }
 
 .franzbot-list { list-style: none; }
 
 .franzbot-item {
   padding: 1.4rem 0;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(61, 90, 128, 0.15);
 }
 
 .franzbot-item:first-child { padding-top: 0; }
 
 .franzbot-teil {
   display: inline-block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bernstein-hell);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
 
 .franzbot-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--nachtblau);
   line-height: 1.35;
   margin-bottom: 0.2rem;
 }
 
-.franzbot-title a { color: var(--text); }
-.franzbot-title a:hover { color: var(--accent); }
+.franzbot-title a { color: var(--nachtblau); }
+.franzbot-title a:hover { color: var(--bernstein-hell); }
 
 .franzbot-teaser {
   font-size: 0.92rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.6;
 }
 
 .franzbot-more {
   display: inline-block;
   margin-top: 0.3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
-  color: var(--accent);
+  font-weight: 600;
+  color: var(--bernstein-hell);
 }
 
-.franzbot-more:hover { color: var(--accent-hover); }
+.franzbot-more:hover { color: var(--bernstein); }
 
 .franzbot-body p {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--anthrazit);
   line-height: 1.65;
 }
 
 .franzbot-badge {
   display: inline-block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.72rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bernstein-hell);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
 
-/* ── Responsive ── */
-@media (max-width: 520px) {
+/* ═══ FOOTER ═══ */
+.site-footer {
+  background: var(--nachtblau);
+  color: var(--warmweiss);
+  padding: 2.5rem 2rem;
+  margin-top: auto;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+}
+
+.footer-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  transform: rotate(4deg);
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--warmweiss);
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--bernstein);
+}
+
+.site-footer a {
+  color: var(--bernstein);
+  opacity: 0.85;
+}
+
+.site-footer a:hover { opacity: 1; }
+
+.footer-note {
+  font-style: italic;
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+
+/* ═══ PAGINATION ═══ */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(61, 90, 128, 0.15);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.88rem;
+}
+
+.pagination a {
+  font-weight: 600;
+  color: var(--bernstein-hell);
+}
+
+.pagination a:hover { color: var(--bernstein); }
+
+.pagination-inactive { visibility: hidden; }
+
+.pagination-info {
+  color: var(--stahlblau);
+  font-size: 0.82rem;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 600px) {
   body { font-size: 17px; }
-  .blog-title { font-size: 1.7rem; }
-  .post-title { font-size: 1.25rem; }
+
+  .site-header { padding: 1rem; }
+  .site-header .inner { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .logo-text { font-size: 1.3rem; }
+  .site-nav { font-size: 0.8rem; gap: 1rem; }
+  .site-nav a:first-child { margin-left: 0; }
+
+  .content { padding: 1.5rem 1rem 3rem; }
+
+  .post-title { font-size: 1.3rem; }
   .post-list-title { font-size: 1.05rem; }
-  .content { margin: 1.5rem 0 3rem; }
+  .post-body blockquote { font-size: 0.95rem; }
   .post-body pre { font-size: 0.74rem; }
   .post-signature { font-size: 0.7rem; }
 }

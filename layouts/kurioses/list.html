@@ -4,8 +4,10 @@
   <p class="kurioses-tagline">Kurze Häppchen. Überraschend. Nützlich. Manchmal lustig.</p>
 </div>
 
+{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+
 <ul class="kurioses-list">
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range $paginator.Pages }}
   <li class="kurioses-item">
     <h3 class="kurioses-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     <p class="kurioses-date">{{ partial "date-de.html" .Date }}</p>
@@ -14,4 +16,22 @@
   </li>
   {{ end }}
 </ul>
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{ if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">← Neuere</a>
+  {{ else }}
+  <span class="pagination-prev pagination-inactive"></span>
+  {{ end }}
+
+  <span class="pagination-info">Seite {{ $paginator.PageNumber }} von {{ $paginator.TotalPages }}</span>
+
+  {{ if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL }}" class="pagination-next">Ältere →</a>
+  {{ else }}
+  <span class="pagination-next pagination-inactive"></span>
+  {{ end }}
+</nav>
+{{ end }}
 {{ end }}
